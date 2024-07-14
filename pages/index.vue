@@ -4,7 +4,15 @@
       <!-- <video v-if="showIntro === 'gif'" autoplay class="fixed top-0 left-0 h-full w-full object-cover opacity-100 transition-all duration-1000" @click="showIntro = 'video'" loop muted preload="true">
         <source :src="introLoop" type="video/webm" />
       </video> -->
-      <img v-if="showIntro === 'gif'" :src="home" alt="" class="fixed top-0 left-0 w-full h-full object-cover" @click="showIntro = 'video'" />
+      <div v-if="showIntro === 'gif'" class="fixed top-0 left-0 w-full h-full">
+        <img :src="home" alt="" class="w-full h-full object-cover" />
+        <button
+          class="absolute top-[70%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[120px] z-10 border-8 border-brown rounded-full bg-beige font-sneakers-500 text-brown text-[2.5rem]"
+          @click="showIntro = 'video'"
+        >
+          ENTER
+        </button>
+      </div>
       <video
         v-else-if="showIntro === 'video'"
         preload="true"
