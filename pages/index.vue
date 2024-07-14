@@ -117,7 +117,7 @@
 <script setup lang="ts">
 import introVideo from "@/assets/videos/obojimaIntroTrim.webm";
 import map from "@/assets/images/obojimaMapResized.png";
-import introGif from "@/assets/images/ObojimaGif.gif";
+import introGif from "@/assets/images/ObojimaGifCompressed.gif";
 
 const showIntro = ref<"gif" | "video" | false>("gif");
 const videoPlayer = ref<HTMLVideoElement>();
