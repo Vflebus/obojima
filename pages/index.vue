@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-[#384E9F]">
+  <div class="w-screen h-screen bg-seaBlue">
     <Transition name="fade" mode="in-out">
       <!-- <video v-if="showIntro === 'gif'" autoplay class="fixed top-0 left-0 h-full w-full object-cover opacity-100 transition-all duration-1000" @click="showIntro = 'video'" loop muted preload="true">
         <source :src="introLoop" type="video/webm" />
@@ -28,44 +28,47 @@
     <div class="w-screen h-full flex">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1279 810" class="shrink-0">
         <image width="1279" height="810" class="h-full w-auto" :xlink:href="map"></image>
-        <rect x="0" y="0" fill="transparent" width="388" height="88" class="cursor-pointer" @click="showRegion('0')"></rect>
-        <circle cx="207" cy="535" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('29')"></circle>
-        <circle cx="443" cy="325" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('7')"></circle>
-        <circle cx="458" cy="199" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('6')"></circle>
-        <circle cx="452" cy="110" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('25')"></circle>
-        <circle cx="476" cy="110" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('28')"></circle>
-        <circle cx="616" cy="125" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('22')"></circle>
-        <circle cx="496" cy="255" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('2')"></circle>
-        <circle cx="584" cy="235" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('21')"></circle>
-        <circle cx="666" cy="214" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('23')"></circle>
-        <circle cx="761" cy="99" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('24')"></circle>
-        <circle cx="753" cy="144" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('27')"></circle>
-        <circle cx="453" cy="422" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('3')"></circle>
-        <circle cx="524" cy="610" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('4')"></circle>
-        <circle cx="531" cy="741" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('1')"></circle>
-        <circle cx="590" cy="690" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('8')"></circle>
-        <circle cx="648" cy="542" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('10')"></circle>
-        <circle cx="695" cy="426" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('11')"></circle>
-        <circle cx="618" cy="418" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('12')"></circle>
-        <circle cx="577" cy="480" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('9')"></circle>
-        <circle cx="916" cy="117" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('26')"></circle>
-        <circle cx="852" cy="228" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('17')"></circle>
-        <circle cx="821" cy="342" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('20')"></circle>
-        <circle cx="916" cy="372" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('18')"></circle>
-        <circle cx="1073" cy="490" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('16')"></circle>
-        <circle cx="1104" cy="342" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('19')"></circle>
-        <circle cx="870" cy="526" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('15')"></circle>
-        <circle cx="794" cy="542" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('14')"></circle>
-        <circle cx="872" cy="656" r="10" fill="transparent" class="cursor-pointer" @click="showRegion('13')"></circle>
+        <rect x="0" y="0" fill="transparent" width="388" height="88" class="cursor-pointer" @click="currentRegionKey = '0'"></rect>
+        <circle cx="207" cy="535" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '29'"></circle>
+        <circle cx="443" cy="325" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '7'"></circle>
+        <circle cx="458" cy="199" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '6'"></circle>
+        <circle cx="452" cy="110" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '25'"></circle>
+        <circle cx="476" cy="110" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '28'"></circle>
+        <circle cx="616" cy="125" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '22'"></circle>
+        <circle cx="496" cy="255" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '2'"></circle>
+        <circle cx="584" cy="235" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '21'"></circle>
+        <circle cx="666" cy="214" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '23'"></circle>
+        <circle cx="761" cy="99" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '24'"></circle>
+        <circle cx="753" cy="144" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '27'"></circle>
+        <circle cx="453" cy="422" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '3'"></circle>
+        <circle cx="524" cy="610" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '4'"></circle>
+        <circle cx="531" cy="741" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '1'"></circle>
+        <circle cx="590" cy="690" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '8'"></circle>
+        <circle cx="648" cy="542" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '10'"></circle>
+        <circle cx="695" cy="426" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '11'"></circle>
+        <circle cx="618" cy="418" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '12'"></circle>
+        <circle cx="577" cy="480" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '9'"></circle>
+        <circle cx="916" cy="117" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '26'"></circle>
+        <circle cx="852" cy="228" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '17'"></circle>
+        <circle cx="821" cy="342" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '20'"></circle>
+        <circle cx="916" cy="372" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '18'"></circle>
+        <circle cx="1073" cy="490" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '16'"></circle>
+        <circle cx="1104" cy="342" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '19'"></circle>
+        <circle cx="870" cy="526" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '15'"></circle>
+        <circle cx="794" cy="542" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '14'"></circle>
+        <circle cx="872" cy="656" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '13'"></circle>
       </svg>
       <div class="grow max-w-[24%] bg-[#384E9F] shadow-[0_0_32px_32px_#384E9F] pr-8 py-8">
-        <div class="w-full h-full border-8 border-brown rounded-3xl bg-beige p-4 text-center">
-          <h1 class="text-gold font-sneakers-500 text-[2.5rem] break-words">{{ currentRegion }}</h1>
+        <div class="w-full h-full border-8 border-brown rounded-3xl bg-beige p-4 text-center flex flex-col justify-start items-center">
+          <h1 class="text-gold font-sneakers-500 text-[2.5rem] break-words">{{ currentRegion.title }}</h1>
           <div class="w-full h-[2px] bg-brown rounded-full my-4"></div>
-          <p class="text-brown font-sneakers-500 text-[1.25rem]">
+          <p class="text-brown font-sneakers-500 text-[1.25rem] grow">
             Obojima is a brand new 250+ page campaign setting for 5E. Guide your players through breathtaking locations, encounter strange spirits, discover rare oddities, and battle wild and wondrous
             creatures. Create your own unforgettable narrative in this new, yet familiar world with an all-new collection of curious items, magical spells, and numerous player options.
           </p>
+          <NuxtLink :to="`/region/${currentRegionKey}`" class="w-full h-[80px] border-8 border-brown rounded-full bg-gold font-sneakers-500 text-brown text-[2.5rem]" @click="showIntro = 'video'">
+            LEARN MORE
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -77,6 +80,7 @@ import introVideo from "@/assets/videos/obojimaIntroTrimWebm.webm";
 import map from "@/assets/images/obojimaMapResized.png";
 import home from "@/assets/images/home.jpg";
 import regionsData from "@/data/mapRegions.json";
+import type { Region } from "@/types.ts";
 
 const showIntro = ref<"gif" | "video" | false>("gif");
 const videoPlayer = ref<HTMLVideoElement>();
@@ -91,12 +95,9 @@ const fadeTimeOut = () => {
 watch(showIntro, (newVal) => {
   if (newVal === "video") fadeTimeOut();
 });
-const mutedVideo = ref(true);
 
-const currentRegion = ref("Obojima");
-const showRegion = (regionNumber: string) => {
-  currentRegion.value = regionsData[regionNumber as keyof typeof regionsData];
-};
+const currentRegionKey = ref<keyof typeof regionsData>("0");
+const currentRegion = computed<Region>(() => regionsData[currentRegionKey.value]);
 </script>
 
 <style scoped>

@@ -1,32 +1,198 @@
 {
-  "0": "Obojima",
-  "1": "Coastal Divers' Lodge, Southern Branch",
-  "2": "Matango Village",
-  "3": "Okiri Village",
-  "4": "Temple of Shroom",
-  "5": "Tidewater, the Village of Sand",
-  "6": "Uluwa, the Spirit Market",
-  "7": "The Spine of Jumali & Harkbeak",
-  "8": "Yatamon, the First Age City",
-  "9": "Amar Shurak: Boulder Town",
-  "10": "Canyon of Abundance",
-  "11": "Domain of the Fish Head Coven",
-  "12": "Wandering Forest",
-  "13": "AHA Headquarters",
-  "14": "Opal Falls",
-  "15": "Broken Bird Airfield",
-  "16": "Corrupted Coastline",
-  "17": "Goodies Market",
-  "18": "Hakumon's Ramen Shop",
-  "19": "Polewater Village",
-  "20": "Roa Kala",
-  "21": "The Graysteps",
-  "22": "Jumaga Roost",
-  "23": "Togal, the Steelwork Town",
-  "24": "Chisuay's Teahouse",
-  "25": "Coastal Divers' Lodge, Northern Branch",
-  "26": "The Lair of Goomaji",
-  "27": "Hogstone Hot Springs",
-  "28": "Sky Kite Valley",
-  "29": "Domain of the Lionfish King"
+  "0": {
+    "title": "Obojima",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "1": {
+    "title": "Coastal Divers' Lodge, Southern Branch",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "2": {
+    "title": "Matango Village",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "3": {
+    "title": "Okiri Village",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "4": {
+    "title": "Temple of Shroom",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/characters/old_brass_eye_.png"
+      }
+    ]
+  },
+  "5": {
+    "title": "Tidewater, the Village of Sand",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "6": {
+    "title": "Uluwa, the Spirit Market",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "7": {
+    "title": "The Spine of Jumali & Harkbeak",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "8": {
+    "title": "Yatamon, the First Age City",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "9": {
+    "title": "Amar Shurak: Boulder Town",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "10": {
+    "title": "Canyon of Abundance",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "11": {
+    "title": "Domain of the Fish Head Coven",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "12": {
+    "title": "Wandering Forest",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "13": {
+    "title": "AHA Headquarters",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "14": {
+    "title": "Opal Falls",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "15": {
+    "title": "Broken Bird Airfield",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "16": {
+    "title": "Corrupted Coastline",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "17": {
+    "title": "Goodies Market",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "18": {
+    "title": "Hakumon's Ramen Shop",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "19": {
+    "title": "Polewater Village",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "20": {
+    "title": "Roa Kala",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "21": {
+    "title": "The Graysteps",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "22": {
+    "title": "Jumaga Roost",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "23": {
+    "title": "Togal, the Steelwork Town",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "24": {
+    "title": "Chisuay's Teahouse",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "25": {
+    "title": "Coastal Divers' Lodge, Northern Branch",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "26": {
+    "title": "The Lair of Goomaji",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "27": {
+    "title": "Hogstone Hot Springs",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "28": {
+    "title": "Sky Kite Valley",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  },
+  "29": {
+    "title": "Domain of the Lionfish King",
+    "description": "",
+    "image": "~/assets/images/",
+    "characters": []
+  }
 }
