@@ -17,8 +17,16 @@
       </div>
     </Transition>
     <div class="w-screen h-full flex flex-col lg:flex-row justify-start items-center">
-      <div class="shrink-0 w-screen max-h-screen lg:w-[75%] relative">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1279 810" class="w-[100%] h-[100%] !cursor-default" v-panzoom="panZoomOptions">
+      <div class="shrink-0 w-screen max-h-screen lg:w-[65%] xl:w-[75%] relative">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1279 810"
+          class="w-[100%] h-[100%] !cursor-default"
+          ref="mapSvg"
+          @wheel="panzoomWithWhels"
+        >
           <image width="1279" height="810" class="h-full w-auto shadow-[0_0_32px_32px_#384E9F_inset]" :xlink:href="map"></image>
           <rect x="0" y="0" fill="transparent" width="388" height="88" class="cursor-pointer" @click="currentRegionKey = '0'"></rect>
           <circle cx="207" cy="535" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '29'"></circle>
@@ -50,12 +58,13 @@
           <circle cx="794" cy="542" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '14'"></circle>
           <circle cx="872" cy="656" r="10" fill="transparent" class="cursor-pointer" @click="currentRegionKey = '13'"></circle>
         </svg>
-        <div v-if="!zoomedOnce" class="absolute top-0 left-0 w-full h-full bg-black/50 flex justify-center items-center lg:hidden" @pointerdown="zoomedOnce = true">
-          <Icon name="material-symbols:pan-zoom-rounded" class="text-white animate-pulse" size="4rem" />
+        <div v-if="!zoomedOnce" class="absolute top-0 left-0 w-full h-full bg-black/50 flex justify-center items-center" @pointerdown="zoomedOnce = true" @wheel="panzoomWithWhels">
+          <Icon name="material-symbols:pan-zoom-rounded" class="text-white animate-pulse lg:hidden" size="4rem" />
+          <p class="text-white hidden lg:block">Use ctrl + scroll to zoom the map</p>
         </div>
       </div>
-      <div class="w-full lg:h-full lg:w-[25%] bg-seaBlue shadow-[0_0_32px_32px_#384E9F] lg:pr-8 py-8 px-[5%] relative z-10" ref="regionsInfosDiv">
-        <div class="w-full h-full border-8 border-brown rounded-3xl bg-beige p-4 text-center flex flex-col justify-start items-center">
+      <div class="w-full lg:h-full lg:w-[35%] xl:w-[25%] bg-seaBlue shadow-[0_0_32px_32px_#384E9F] lg:pr-8 py-8 px-[5%] relative z-10" ref="regionsInfosDiv">
+        <div class="w-full h-full overflow-auto border-8 border-brown rounded-3xl bg-beige p-4 text-center flex flex-col justify-start items-center">
           <h1 class="text-gold font-sneakers-500 text-[2.5rem] break-words">{{ currentRegion.title }}</h1>
           <div class="w-full h-[2px] bg-brown rounded-full my-4"></div>
           <p class="text-brown font-sneakers-500 text-[1.25rem] grow">
@@ -76,6 +85,7 @@
 </template>
 
 <script setup lang="ts">
+import Panzoom, { type PanzoomObject } from "@panzoom/panzoom";
 import introVideo from "@/assets/videos/obojimaIntroTrimWebm.webm";
 import map from "@/assets/images/obojimaMapResized.png";
 import home from "@/assets/images/home.jpg";
@@ -116,6 +126,20 @@ const panZoomOptions = {
 };
 
 const zoomedOnce = ref(false);
+
+const mapSvg = ref<HTMLDivElement>();
+const panzoom = ref<PanzoomObject>();
+
+const panzoomWithWhels = (e: WheelEvent) => {
+  const { ctrlKey } = e;
+  if (!ctrlKey || !panzoom.value) return;
+  panzoom.value.zoomWithWheel(e);
+  if (!zoomedOnce.value) zoomedOnce.value = true;
+};
+onMounted(() => {
+  if (!mapSvg.value) return;
+  panzoom.value = Panzoom(mapSvg.value, panZoomOptions);
+});
 </script>
 
 <style scoped>
