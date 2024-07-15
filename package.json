@@ -14,7 +14,6 @@
     "@nuxt/icon": "^1.1.1",
     "@panzoom/panzoom": "^4.5.1",
     "@pinia/nuxt": "^0.5.1",
-    "@wgr-sa/nuxt-panzoom": "^0.1.0",
     "nuxt": "^3.12.3",
     "pinia": "^2.1.7",
     "vue": "latest"
