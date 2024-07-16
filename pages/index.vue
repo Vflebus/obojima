@@ -27,9 +27,10 @@
           ref="mapSvg"
           @wheel="panzoomWithWhels"
         >
-          <image width="1279" height="810" class="imgShadow" :xlink:href="map"></image>
+          <image width="1279" height="810" :xlink:href="map"></image>
           <rect x="0" y="0" fill="transparent" width="388" height="88" class="cursor-pointer" @click="selectOrUnselectRegion('0')"></rect>
           <circle cx="207" cy="535" r="15" fill="transparent" class="cursor-pointer" @click="selectOrUnselectRegion('29')"></circle>
+          <circle cx="360" cy="635" r="15" fill="transparent" class="cursor-pointer" @click="selectOrUnselectRegion('5')"></circle>
           <circle cx="443" cy="325" r="15" fill="transparent" class="cursor-pointer" @click="selectOrUnselectRegion('7')"></circle>
           <circle cx="458" cy="199" r="15" fill="transparent" class="cursor-pointer" @click="selectOrUnselectRegion('6')"></circle>
           <circle cx="452" cy="110" r="15" fill="transparent" class="cursor-pointer" @click="selectOrUnselectRegion('25')"></circle>
@@ -179,12 +180,5 @@ onMounted(() => {
   .slideIn-leave-to {
     transform: translateX(100%);
   }
-}
-
-.imgShadow::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  box-shadow: inset 0 0 10px 10px rgba(246, 218, 33, 1);
 }
 </style>

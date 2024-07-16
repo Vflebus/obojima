@@ -9,4 +9,5 @@ export interface Region {
     description: string;
     image: string;
     characters: Character[];
+    backgroundColor: string
 }

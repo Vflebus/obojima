@@ -19,7 +19,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "1": {
     "title": "Coastal Divers' Lodge, Southern Branch",
@@ -41,7 +42,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "2": {
     "title": "Matango Village",
@@ -63,7 +65,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "3": {
     "title": "Okiri Village",
@@ -85,7 +88,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": "#799554"
   },
   "4": {
     "title": "Temple of Shroom",
@@ -107,7 +111,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": "#DAA052"
   },
   "5": {
     "title": "Tidewater, the Village of Sand",
@@ -129,7 +134,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "6": {
     "title": "Uluwa, the Spirit Market",
@@ -151,7 +157,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "7": {
     "title": "The Spine of Jumali & Harkbeak",
@@ -173,7 +180,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "8": {
     "title": "Yatamon, the First Age City",
@@ -195,7 +203,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "9": {
     "title": "Amar Shurak: Boulder Town",
@@ -217,7 +226,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "10": {
     "title": "Canyon of Abundance",
@@ -239,7 +249,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "11": {
     "title": "Domain of the Fish Head Coven",
@@ -261,7 +272,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "12": {
     "title": "Wandering Forest",
@@ -283,7 +295,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "13": {
     "title": "AHA Headquarters",
@@ -305,7 +318,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "14": {
     "title": "Opal Falls",
@@ -327,7 +341,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "15": {
     "title": "Broken Bird Airfield",
@@ -349,7 +364,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "16": {
     "title": "Corrupted Coastline",
@@ -371,7 +387,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "17": {
     "title": "Goodies Market",
@@ -393,7 +410,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "18": {
     "title": "Hakumon's Ramen Shop",
@@ -415,7 +433,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "19": {
     "title": "Polewater Village",
@@ -437,7 +456,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "20": {
     "title": "Roa Kala",
@@ -459,7 +479,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "21": {
     "title": "The Graysteps",
@@ -481,7 +502,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "22": {
     "title": "Jumaga Roost",
@@ -503,7 +525,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "23": {
     "title": "Togal, the Steelwork Town",
@@ -525,7 +548,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "24": {
     "title": "Chisuay's Teahouse",
@@ -547,7 +571,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "25": {
     "title": "Coastal Divers' Lodge, Northern Branch",
@@ -569,7 +594,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "26": {
     "title": "The Lair of Goomaji",
@@ -591,7 +617,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "27": {
     "title": "Hogstone Hot Springs",
@@ -613,7 +640,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "28": {
     "title": "Sky Kite Valley",
@@ -635,7 +663,8 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   },
   "29": {
     "title": "Domain of the Lionfish King",
@@ -657,6 +686,7 @@
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
         "image": "/images/characters/old_brass_eye_.png"
       }
-    ]
+    ],
+    "backgroundColor": ""
   }
 }

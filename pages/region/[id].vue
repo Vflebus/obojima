@@ -57,7 +57,13 @@ const containerDiv = ref<HTMLDivElement>();
 const headerImg = ref<HTMLImageElement>();
 const mainTitle = ref<HTMLDivElement>();
 
-onMounted(async () => {
+const setBackgroundColor = async () => {
+  if (currentRegion.value.backgroundColor) {
+    containerDiv.value!.style.backgroundColor = currentRegion.value.backgroundColor;
+    mainTitle.value!.style.backgroundColor = currentRegion.value.backgroundColor;
+    mainTitle.value!.style.boxShadow = `0 -32px 32px 32px ${currentRegion.value.backgroundColor}`;
+    return;
+  }
   const colorThief = new ColorThief();
   let color;
   if (headerImg.value?.complete) {
@@ -79,6 +85,12 @@ onMounted(async () => {
       }
     });
   }
+};
+
+const animationsStore = useAnimationsStore();
+onMounted(() => {
+  setBackgroundColor();
+  animationsStore.animations.introPlayed = true;
 });
 </script>
 
