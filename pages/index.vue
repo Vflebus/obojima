@@ -136,9 +136,7 @@ const introEnded = () => {
 const panZoomOptions = {
   contain: "outside",
   step: 1,
-  // startScale: 2,
   maxScale: 6,
-  handleStartEvent: () => {},
 };
 
 const mapSvg = ref<HTMLDivElement>();
