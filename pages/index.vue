@@ -78,7 +78,7 @@
             </button>
             <h1 class="text-gold font-sneakers-500 text-[1.5rem] xl:text-[2.5rem] break-words">{{ currentRegion.title }}</h1>
             <div class="w-full h-[2px] bg-brown rounded-full my-4"></div>
-            <p v-if="currentRegionKey === '0'">
+            <p v-if="currentRegionKey === '0'" class="grow">
               Welcome !
               <br />
               Select a point of interest on the map to learn more about Obojima
@@ -87,6 +87,7 @@
               Obojima is a brand new 250+ page campaign setting for 5E. Guide your players through breathtaking locations, encounter strange spirits, discover rare oddities, and battle wild and
               wondrous creatures. Create your own unforgettable narrative in this new, yet familiar world with an all-new collection of curious items, magical spells, and numerous player options.
             </p>
+            <p>Visit the <a href="https://www.kickstarter.com/projects/1985games/obojima-tales-from-the-tall-grass-a-5e-campaign-setting" class="underline text-[#05CE78]">kickstarter page</a></p>
             <NuxtLink
               v-if="currentRegionKey !== '0'"
               :to="`/region/${currentRegionKey}`"
