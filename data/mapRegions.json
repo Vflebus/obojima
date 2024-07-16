@@ -2,197 +2,661 @@
   "0": {
     "title": "Obojima",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
-  },
-  "1": {
-    "title": "Coastal Divers' Lodge, Southern Branch",
-    "description": "",
-    "image": "~/assets/images/",
-    "characters": []
-  },
-  "2": {
-    "title": "Matango Village",
-    "description": "",
-    "image": "~/assets/images/",
-    "characters": []
-  },
-  "3": {
-    "title": "Okiri Village",
-    "description": "",
-    "image": "~/assets/images/",
-    "characters": []
-  },
-  "4": {
-    "title": "Temple of Shroom",
-    "description": "",
-    "image": "~/assets/images/",
+    "image": "/images/regions/The_Sky_King.png",
     "characters": [
       {
         "name": "Witchie",
         "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
-        "image": "/characters/witch_final.png"
+        "image": "/images/characters/witch_final.png"
       },
       {
         "name": "Chisuay",
         "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
-        "image": "/characters/chisuay_final.png"
+        "image": "/images/characters/chisuay_final.png"
       },
       {
         "name": "Old Brass Eye",
         "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
-        "image": "/characters/old_brass_eye_.png"
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
+  },
+  "1": {
+    "title": "Coastal Divers' Lodge, Southern Branch",
+    "description": "",
+    "image": "/images/regions/sea.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
+  },
+  "2": {
+    "title": "Matango Village",
+    "description": "",
+    "image": "/images/regions/town-market.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
+  },
+  "3": {
+    "title": "Okiri Village",
+    "description": "",
+    "image": "/images/regions/okiri.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
+  },
+  "4": {
+    "title": "Temple of Shroom",
+    "description": "",
+    "image": "/images/regions/shrooms.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
       }
     ]
   },
   "5": {
     "title": "Tidewater, the Village of Sand",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/sand.jpg",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "6": {
     "title": "Uluwa, the Spirit Market",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/town-market.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "7": {
     "title": "The Spine of Jumali & Harkbeak",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/travel-plain.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "8": {
     "title": "Yatamon, the First Age City",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/shuritashi.jpg",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "9": {
     "title": "Amar Shurak: Boulder Town",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/night-village.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "10": {
     "title": "Canyon of Abundance",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/travel-plain.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "11": {
     "title": "Domain of the Fish Head Coven",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/sea.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "12": {
     "title": "Wandering Forest",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/forest-sheep.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "13": {
     "title": "AHA Headquarters",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/town-market.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "14": {
     "title": "Opal Falls",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/travel-plain.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "15": {
     "title": "Broken Bird Airfield",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/travel-plain.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "16": {
     "title": "Corrupted Coastline",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/corruption.jpg",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "17": {
     "title": "Goodies Market",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/masks.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "18": {
     "title": "Hakumon's Ramen Shop",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/town.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "19": {
     "title": "Polewater Village",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/corruption.jpg",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "20": {
     "title": "Roa Kala",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/travel-spirit.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "21": {
     "title": "The Graysteps",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/travel-spirit.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "22": {
     "title": "Jumaga Roost",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/masks.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "23": {
     "title": "Togal, the Steelwork Town",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/town.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "24": {
     "title": "Chisuay's Teahouse",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/masks.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "25": {
     "title": "Coastal Divers' Lodge, Northern Branch",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/sea.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "26": {
     "title": "The Lair of Goomaji",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/The_Sky_Salamandar_1.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "27": {
     "title": "Hogstone Hot Springs",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/hot-water.jpg",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "28": {
     "title": "Sky Kite Valley",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/shrooms.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   },
   "29": {
     "title": "Domain of the Lionfish King",
     "description": "",
-    "image": "~/assets/images/",
-    "characters": []
+    "image": "/images/regions/shrooms.png",
+    "characters": [
+      {
+        "name": "Witchie",
+        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
+        "image": "/images/characters/witch_final.png"
+      },
+      {
+        "name": "Chisuay",
+        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
+        "image": "/images/characters/chisuay_final.png"
+      },
+      {
+        "name": "Old Brass Eye",
+        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
+        "image": "/images/characters/old_brass_eye_.png"
+      }
+    ]
   }
 }

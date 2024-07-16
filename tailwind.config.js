@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         'sneakers-500': ['Sneakers-500', 'sans-serif'],
+        'sneakers-wide': ['Sneakers-wide', 'sans-serif'],
       }
     },
   },

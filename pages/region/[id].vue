@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full min-h-screen bg-gold flex flex-col justify-start items-center">
+  <div class="w-full min-h-screen bg-seaBlue flex flex-col justify-start items-center" ref="containerDiv">
     <NuxtLink to="/" class="fixed top-4 left-4 z-10">
       <Icon name="material-symbols:arrow-back-rounded" class="text-white drop-shadow-[0px_0px_2px_black]" size="4rem" mode="svg" />
     </NuxtLink>
     <header class="w-full h-screen relative">
-      <img src="~/assets/images/regions/shrooms.png" alt="" class="w-full h-full object-cover object-center" />
-      <h1 class="absolute bottom-0 w-full text-[4rem] font-sneakers-500 text-white text-center bg-gold shadow-[0_-32px_32px_32px_#DAA052]">{{ currentRegion.title }}</h1>
+      <img :src="currentRegion.image" alt="" class="w-full h-full object-cover object-center" ref="headerImg" />
+      <h1 class="absolute bottom-0 w-full text-[4rem] font-sneakers-500 text-white text-center bg-gold shadow-[0_-32px_32px_32px_#DAA052]" ref="mainTitle">{{ currentRegion.title }}</h1>
     </header>
     <main class="w-full p-8 flex flex-col items-center text-white gap-8">
       <div class="w-full lg:w-1/3 flex flex-col gap-4 text-justify">
@@ -38,6 +38,7 @@
 <script setup lang="ts">
 import regionsData from "@/data/mapRegions.json";
 import type { Region } from "@/types";
+import ColorThief from "colorthief";
 
 const route = useRoute();
 const regionId: string = route.params.id as string;
@@ -49,8 +50,35 @@ const currentRegion = computed<Region>(() => {
       statusMessage: "This region does not exist yet !",
     });
   }
-  return regionsData["4"];
   return regionsData[regionId as keyof typeof regionsData];
+});
+
+const containerDiv = ref<HTMLDivElement>();
+const headerImg = ref<HTMLImageElement>();
+const mainTitle = ref<HTMLDivElement>();
+
+onMounted(async () => {
+  const colorThief = new ColorThief();
+  let color;
+  if (headerImg.value?.complete) {
+    color = await colorThief.getColor(headerImg.value);
+    console.log(color);
+    if (color) {
+      containerDiv.value!.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+      mainTitle.value!.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+      mainTitle.value!.style.boxShadow = `0 -32px 32px 32px rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+    }
+  } else {
+    headerImg.value?.addEventListener("load", async function () {
+      color = await colorThief.getColor(headerImg.value);
+      console.log(color);
+      if (color) {
+        containerDiv.value!.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+        mainTitle.value!.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+        mainTitle.value!.style.boxShadow = `0 -32px 32px 32px rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+      }
+    });
+  }
 });
 </script>
 
