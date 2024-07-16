@@ -10,8 +10,8 @@
           ENTER
         </button>
       </div>
-      <div v-else-if="showIntro === 'video'" class="fixed top-0 left-0 w-screen h-screen z-50">
-        <video preload="true" autoplay class="w-full h-full object-cover object-center opacity-100 transition-all duration-1000" @play="fadeTimeOut" @ended="introEnded" ref="videoPlayer">
+      <div v-else-if="showIntro === 'video'" class="fixed top-0 left-0 w-screen h-screen z-50 transition-all duration-1000" ref="videoPlayer">
+        <video preload="true" autoplay class="w-full h-full object-cover object-center opacity-100" @play="fadeTimeOut" @ended="introEnded">
           <source :src="introVideo" type="video/webm" />
         </video>
       </div>
@@ -25,7 +25,7 @@
           viewBox="0 0 1279 810"
           class="w-screen h-screen !cursor-grab shadow-[0_0_1028px_1028px_#384E9F_inset]"
           ref="mapSvg"
-          @wheel="panzoomWithWhels"
+          @wheel="panzoomWithWheels"
         >
           <image width="1279" height="810" :xlink:href="map"></image>
           <rect x="0" y="0" fill="transparent" width="388" height="88" class="cursor-pointer" @click="selectOrUnselectRegion('0')"></rect>
@@ -64,10 +64,10 @@
           class="absolute top-0 left-0 w-full h-full bg-black/50 flex justify-center items-center cursor-grab"
           @pointerdown="animationsStore.animations.zoomedOnce = true"
           @touchstart="animationsStore.animations.zoomedOnce = true"
-          @wheel="panzoomWithWhels"
+          @wheel="panzoomWithWheels"
         >
-          <Icon name="material-symbols:pan-zoom-rounded" class="text-white animate-pulse lg:hidden pointer-events-none" size="4rem" />
-          <p class="text-white hidden lg:block pointer-events-none">Use scroll to zoom the map</p>
+          <Icon name="material-symbols:pan-zoom-rounded" class="text-white animate-pulse lg:hidden" size="4rem" />
+          <p class="text-white hidden lg:block">Use scroll to zoom the map</p>
         </div>
       </div>
       <Transition name="slideIn">
@@ -112,6 +112,7 @@ const fadeTimeOut = () => {
   setTimeout(() => {
     if (videoPlayer.value) {
       videoPlayer.value.style.opacity = "0";
+      videoPlayer.value.style.pointerEvents = "none";
     }
   }, 5320);
 };
@@ -140,9 +141,12 @@ const panZoomOptions = {
 };
 
 const mapSvg = ref<HTMLDivElement>();
+// watch(mapSvg, () => {
+//   if (mapSvg) showIntro.value = "video";
+// });
 const panzoom = ref<PanzoomObject>();
 
-const panzoomWithWhels = (e: WheelEvent) => {
+const panzoomWithWheels = (e: WheelEvent) => {
   // const { ctrlKey } = e;
   // if (!ctrlKey || !panzoom.value) return;
   panzoom.value?.zoomWithWheel(e);
