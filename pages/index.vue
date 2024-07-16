@@ -99,7 +99,7 @@
 <script setup lang="ts">
 import Panzoom, { type PanzoomObject } from "@panzoom/panzoom";
 import introVideo from "@/assets/videos/obojimaIntroTrimWebm.webm";
-import map from "@/assets/images/obojimaMapResized.png";
+import map from "@/assets/images/obojiMap.png";
 import home from "@/assets/images/home.jpg";
 import regionsData from "@/data/mapRegions.json";
 import type { Region } from "@/types";
