@@ -66,8 +66,8 @@
           @touchstart="animationsStore.animations.zoomedOnce = true"
           @wheel="panzoomWithWhels"
         >
-          <Icon name="material-symbols:pan-zoom-rounded" class="text-white animate-pulse lg:hidden" size="4rem" />
-          <p class="text-white hidden lg:block">Use scroll to zoom the map</p>
+          <Icon name="material-symbols:pan-zoom-rounded" class="text-white animate-pulse lg:hidden pointer-events-none" size="4rem" />
+          <p class="text-white hidden lg:block pointer-events-none">Use scroll to zoom the map</p>
         </div>
       </div>
       <Transition name="slideIn">
