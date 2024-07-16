@@ -1,11 +1,13 @@
 interface Animations {
-    introPlayed: boolean
+    introPlayed: boolean,
+    zoomedOnce: boolean
 }
 
 export const useAnimationsStore = defineStore('AnimationsStore', {
     state: (): { animations: Animations } => ({
         animations: {
-            introPlayed: false
+            introPlayed: false,
+            zoomedOnce: false
         }
     }),
 })
