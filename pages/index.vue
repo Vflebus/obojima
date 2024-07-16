@@ -62,6 +62,7 @@
           v-if="!animationsStore.animations.zoomedOnce"
           class="absolute top-0 left-0 w-full h-full bg-black/50 flex justify-center items-center cursor-grab"
           @pointerdown="animationsStore.animations.zoomedOnce = true"
+          @touchstart="animationsStore.animations.zoomedOnce = true"
           @wheel="panzoomWithWhels"
         >
           <Icon name="material-symbols:pan-zoom-rounded" class="text-white animate-pulse lg:hidden" size="4rem" />

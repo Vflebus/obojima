@@ -5,7 +5,7 @@
     </NuxtLink>
     <header class="w-full h-screen relative">
       <img :src="currentRegion.image" alt="" class="w-full h-full object-cover object-center" ref="headerImg" />
-      <h1 class="absolute bottom-0 w-full text-[4rem] font-sneakers-500 text-white text-center bg-gold shadow-[0_-32px_32px_32px_#DAA052]" ref="mainTitle">{{ currentRegion.title }}</h1>
+      <h1 class="absolute bottom-0 w-full text-[4rem] font-sneakers-500 text-white text-center bg-seaBlue shadow-[0_-32px_32px_32px_#384e9f]" ref="mainTitle">{{ currentRegion.title }}</h1>
     </header>
     <main class="w-full p-8 flex flex-col items-center text-white gap-8">
       <div class="w-full lg:w-1/3 flex flex-col gap-4 text-justify">
