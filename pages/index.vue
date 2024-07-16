@@ -78,11 +78,17 @@
             </button>
             <h1 class="text-gold font-sneakers-500 text-[1.5rem] xl:text-[2.5rem] break-words">{{ currentRegion.title }}</h1>
             <div class="w-full h-[2px] bg-brown rounded-full my-4"></div>
-            <p class="text-brown font-sneakers-500 text-[1.25rem] grow hidden xl:block">
+            <p v-if="currentRegionKey === '0'">
+              Welcome !
+              <br />
+              Select a point of interest on the map to learn more about Obojima
+            </p>
+            <p v-else class="text-brown font-sneakers-500 text-[1.25rem] grow hidden xl:block">
               Obojima is a brand new 250+ page campaign setting for 5E. Guide your players through breathtaking locations, encounter strange spirits, discover rare oddities, and battle wild and
               wondrous creatures. Create your own unforgettable narrative in this new, yet familiar world with an all-new collection of curious items, magical spells, and numerous player options.
             </p>
             <NuxtLink
+              v-if="currentRegionKey !== '0'"
               :to="`/region/${currentRegionKey}`"
               class="aspect-[4/1] w-1/2 xl:w-full border-8 border-brown rounded-full bg-gold font-sneakers-500 text-brown lg:text-[2rem] flex justify-center items-center mt-8"
               @click="showIntro = 'video'"
@@ -120,7 +126,7 @@ watch(showIntro, (newVal) => {
   if (newVal === "video") fadeTimeOut();
 });
 
-const currentRegionKey = ref<keyof typeof regionsData>();
+const currentRegionKey = ref<keyof typeof regionsData | undefined>("0");
 const currentRegion = computed<Region | undefined>(() => (currentRegionKey.value ? regionsData[currentRegionKey.value] : undefined));
 const selectOrUnselectRegion = (regionKey: keyof typeof regionsData) => {
   if (currentRegionKey.value === regionKey) currentRegionKey.value = undefined;

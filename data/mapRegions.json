@@ -3,23 +3,7 @@
     "title": "Obojima",
     "description": "",
     "image": "/images/regions/The_Sky_King.png",
-    "characters": [
-      {
-        "name": "Witchie",
-        "description": "A friendly witch still learning the ways of the island. She seeks to uncover the past of her familiar cat Fluffy, and might stumble upon something bigger than she thought...",
-        "image": "/images/characters/witch_final.png"
-      },
-      {
-        "name": "Chisuay",
-        "description": "The leader of the village. He found out that the shrooms can be infused to make one of the best tea there is, and thanks him the village now strives.",
-        "image": "/images/characters/chisuay_final.png"
-      },
-      {
-        "name": "Old Brass Eye",
-        "description": "This blind old man may seem intimidating at first, but his knowledge of the region is matched only by his storytelling skills.",
-        "image": "/images/characters/old_brass_eye_.png"
-      }
-    ],
+    "characters": [],
     "backgroundColor": ""
   },
   "1": {
