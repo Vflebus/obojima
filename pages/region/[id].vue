@@ -24,7 +24,7 @@
       <div class="w-full flex flex-col items-center">
         <h2 class="text-[2rem] font-sneakers-500 text-white text-center lg:mb-32">DISCOVER THE CHARACTERS</h2>
         <div class="flex flex-col w-2/3 items-start gap-4 lg:gap-0">
-          <div v-for="character in currentRegion.characters" class="w-full lg:w-2/3 flex flex-col lg:flex-row items-center lg:even:self-end lg:even:flex-row-reverse lg:-mt-32">
+          <div v-for="character in currentRegion.characters" class="w-full xl:w-2/3 flex flex-col lg:flex-row items-center lg:even:self-end lg:even:flex-row-reverse xl:-mt-32">
             <img :src="character.image" alt="" class="w-full lg:w-auto lg:h-[400px]" />
             <div class="text-justify lg:text-start">
               <h3 class="font-sneakers-500 text-[2rem] text-center lg:text-start">{{ character.name }}</h3>

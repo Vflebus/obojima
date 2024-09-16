@@ -1,5 +1,8 @@
 <template>
   <div class="w-screen h-screen bg-seaBlue overflow-x-hidden">
+    <div v-if="showLoader" class="fixed top-0 left-0 w-screen h-screen z-[60] bg-[#2F9DEC] flex justify-center items-center text-white">
+      <p class="text-[3rem] md:text-[4rem] font-sneakers-500 animate-pulse">Loading...</p>
+    </div>
     <Transition v-if="!animationsStore.animations.introPlayed" name="fade" mode="in-out">
       <div v-if="showIntro === 'gif'" class="fixed top-0 left-0 w-screen h-screen z-50">
         <img :src="home" alt="" class="w-full h-full object-cover object-center" />
@@ -11,7 +14,7 @@
         </button>
       </div>
       <div v-else-if="showIntro === 'video'" class="fixed top-0 left-0 w-screen h-screen z-50 transition-all duration-1000" ref="videoPlayer">
-        <video preload="true" autoplay class="w-full h-full object-cover object-center opacity-100" @play="fadeTimeOut" @ended="introEnded">
+        <video autoplay class="w-full h-full object-cover object-center opacity-100" @play="fadeTimeOut" @ended="introEnded" @canplaythrough="() => console.log('Video loaded')">
           <source :src="introVideo" type="video/webm" />
         </video>
       </div>
@@ -23,9 +26,10 @@
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 1279 810"
-          class="w-screen h-screen !cursor-grab shadow-[0_0_1028px_1028px_#384E9F_inset]"
+          class="w-screen h-screen !cursor-auto active:!cursor-move shadow-[0_0_1028px_1028px_#384E9F_inset]"
           ref="mapSvg"
           @wheel="panzoomWithWheels"
+          @load="() => console.log('carte chargée')"
         >
           <image width="1279" height="810" :xlink:href="map"></image>
           <rect x="0" y="0" fill="transparent" width="388" height="88" class="cursor-pointer" @click="selectOrUnselectRegion('0')"></rect>
@@ -111,6 +115,12 @@ import home from "@/assets/images/home.jpg";
 import regionsData from "@/data/mapRegions.json";
 import type { Region } from "@/types";
 const animationsStore = useAnimationsStore();
+const nuxtApp = useNuxtApp();
+
+const showLoader = ref(true);
+nuxtApp.hook("page:finish", () => {
+  showLoader.value = false;
+});
 
 const showIntro = ref<"gif" | "video" | false>("gif");
 const videoPlayer = ref<HTMLVideoElement>();
@@ -159,7 +169,10 @@ const panzoomWithWheels = (e: WheelEvent) => {
   panzoom.value?.zoomWithWheel(e);
   if (!animationsStore.animations.zoomedOnce) animationsStore.animations.zoomedOnce = true;
 };
+
 onMounted(() => {
+  // const perfData = new PerformanceNavigationTiming
+  // const estimatedTime = Math.abs(perfData.loadEventEnd - perfData.loadEventStart);
   if (!mapSvg.value) return;
   panzoom.value = Panzoom(mapSvg.value, panZoomOptions);
 });
