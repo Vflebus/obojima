@@ -171,8 +171,6 @@ const panzoomWithWheels = (e: WheelEvent) => {
 };
 
 onMounted(() => {
-  // const perfData = new PerformanceNavigationTiming
-  // const estimatedTime = Math.abs(perfData.loadEventEnd - perfData.loadEventStart);
   if (!mapSvg.value) return;
   panzoom.value = Panzoom(mapSvg.value, panZoomOptions);
 });
